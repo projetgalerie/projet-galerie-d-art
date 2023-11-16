@@ -1,0 +1,128 @@
+body{
+    font-family: 'JetBrains Mono';
+
+    background-color: black;
+    color: white; 
+
+    /* On retire les marges de base dans les ul */
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(193, 193, 193);
+    color: black;
+    height: 10vh;
+
+
+}
+.partieGauche, .partieDroite{
+
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+
+}
+nav>div>ul{
+
+    list-style: none;
+    
+    /* On retire les marges de base dans les ul */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Premiere page:  */
+.firstPage{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+.contenufirstPage{
+    display: flex;
+    justify-content: space-evenly;
+    height: 75%;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+.presentation>.boite>img{
+    /* Redimmensionner le logo */
+    width: 250px;
+}
+.presentation>.boite>p{
+    margin: 0;
+}
+.presentation>.boite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.explication>p{
+    margin: 30px;
+}
+.explication{
+    width: 52%;
+}
+h3{
+    font-size: 1.3em;
+    text-align: center;
+    /* On doit aligner le logo et le titre */
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+
+/* DeuxiÃ¨me page : */
+.secondPage{
+    height: 100vh;
+    display: flex;
+}
+.images{
+    /* Pour mettres les images les unes a cotÃ© des autres */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+.bibliographie{
+    width: 30%;
+}
+.titreOeuvres{
+    display: flex;
+}
+.numero{
+    margin-right: 20px;
+}
+.image{
+    display: flex;
+    flex-direction: column; 
+
+}
+.imagesGauche, .imagesDroite{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.image>img{
+    width: 80%;
+}
+.bibliographie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
