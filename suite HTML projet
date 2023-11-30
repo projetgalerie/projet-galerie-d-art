@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+   <link rel="stylesheet" href="style.css" />
+   <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+
+   <title>Application</title>
+ </head>
+
+ <body>
+   <header>
+     <!-- Ici on met la barre de navigation -->
+     <nav>
+       <div class="partieGauche">
+         <ul>
+           <li>Contacts</li>
+           <li>A propos</li>
+         </ul>
+       </div>
+       <div class="partieDroite">
+         <ul>
+           <li>Artistes</li>
+           <li>Visite et reservation</li>
+         </ul>
+       </div>
+     </nav>
+   </header>
+   <main>
+     <!-- Ici on va mettre la page principale -->
+     <div class="firstPage">
+       <div class="contenufirstPage">
+           <div class="presentation">
+             <div class="boite">
+               <!-- Boite du logo -->
+               <img src="./images/logo.png" alt="le logo de la galerie" />
+             </div>
+             <div class="boite">
+               <!-- On ne doit pas utiliser de br !!! -->
+               <p>
+                   GALERIE D'ART
+               </p>
+               <p>
+                   BOULEVARD DUBOUCHAGE
+               </p>
+                <p>
+                   06000 NICE
+                </p>
+             </div>
+             <div class="boite">
+               <p>VERNISSAGE</p>
+               <p>LE 27 OCTOBRE 2023</p>
+               <p>A</p>
+               <p>20:30</p>
+           </div>
+             <div class="boite">
+               <p>
+                   NOS PROCHAINES 
+               </p>
+               <p>
+                   EXPOSITIONS
+               </p>
+           </div>
+           </div>
+           <div class="explication">
+             <h3>PRESENTATION DE NOTRE GALERIE</h3>
+             <p>
+               Le choix de notre galerie d'art integralement en noir et blanc ce
+               decline en plus plusieurs points
+             </p>
+             <p>
+               l'elegance et la simplicite : <br>
+                le noir et blanc est intemporel et
+               epure, il elimine la distraction des couleurs permettent aux
+               visiteurs de se concentrer pleinement sur les oeuvres d'art
+               elles-memes. En enlevant la couleur les details de la
+               composition,texture et la lumiere dans les oeuvres celle ci devient
+               plus visible et renforce l'appreciation artistique
+             </p>
+             <p>
+               Universel:<br>
+                Le noir et blanc transcende les barrieres linguistique et
+               culturelles permettant a un public diversifie d'apprecier l'art sans
+               aucune restriction liee aux preferences de couleurs
+             </p>
+             <p>
+               Accent sur le contenu : <br>
+                la decision de presenter des oeuvres
+               exclusivement en noir et blanc offre une experience artistique
+               unique et captivante permettant aux visiteurs de voir l'art sous un
+               nouveau angle et d'apprecier la creativite de l'artiste d'une
+               maniere differente
+             </p>
+           </div>
+         </div>
+     </div>
+     <div class="secondPage">
+           <div class="images">
+               <div class="imagesGauche">
+                   <div class="image">
+                       <img src="./images/photo 1.jpg" alt="Image 1">
+                       1
+                   </div>
+                   <div class="image">
+                       <img src="./images/photo 2.jpg" alt="Image 1">
+                       3
+                   </div>
+                   <div class="image">
+                       <img src="./images/photo 3.jpg" alt="Image 1">
+                       5
+                   </div>
+               </div>
+               <div class="imagesDroite">
+                   <div class="image">
+                       <img src="./images/photo 4.jpg" alt="Image 1">
+                       2
+                   </div>
+                   <div class="image">
+                       <img src="./images/photo 5.jpg" alt="Image 1">
+                       4
+                   </div>
+                   <div class="image">
+                       <img src="./images/photo 6.jpg" alt="Image 1">
+                       6
+                   </div>
+               </div>
+           </div>
+           <div class="bibliographie">
+                   <h3>OEUVRES PRESENTES :</h3>
+                   <div class="description">
+                       <div class="titreOeuvres">
+                           <div class="numero">1-</div>
+                           <div class="titre">
+                               Lines <br>
+                               de Skye Gaesi
+                               </div>
+
+                       </div>
+                       <div class="titreOeuvres">
+                           <div class="numero">2-</div>
+                           <div class="titre">
+                               Le temps d'un ete <br>
+                               de Cortezia Joji
+                           </div>
+
+                       </div>
+                       <div class="titreOeuvres">
+                           <div class="numero">3-</div>
+                           <div class="titre">Repas d'hiver <br> 
+                           de Lili Merin</div>
+
+                       </div>
+                       <div class="titreOeuvres">
+                           <div class="numero">4-</div>
+                           <div class="titre">L'art du temps <br>
+                           de Charles Pompidou</div>
+
+                       </div>
+                       <div class="titreOeuvres">
+                           <div class="numero">5-</div>
+                           <div class="titre"> Autoportrait <br> 
+                           de Lucas Mania</div>
+
+                       </div>
+                       <div class="titreOeuvres">
+                           <div class="numero">6-</div>
+                           <div class="titre"> Désert d'antan <br>
+                           de Ligman</div>
+
+                       </div>
+                   </div>
+                   <p>cliquez ici pour plus d'oeuvres</p>
+
+           </div>
+     </div>
+   </main>
+   <footer>
+     <!-- Ici on va mettre le footer -->
+   </footer>
+ </body>
+</html>
