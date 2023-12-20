@@ -1,0 +1,281 @@
+body{
+    font-family: 'JetBrains Mono';
+
+    background-color: black;
+    color: white; 
+
+    /* On retire les marges de base dans les ul */
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(193, 193, 193);
+    color: black;
+    height: 10vh;
+
+
+}
+.partieGauche, .partieDroite{
+
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+
+}
+nav>div>ul{
+
+    list-style: none;
+    
+    /* On retire les marges de base dans les ul */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Premiere page:  */
+
+.firstPage{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.contenufirstPage{
+    display: flex;
+    justify-content: space-evenly;
+    height: 75%;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+.presentation>.boite>img{
+    /* Redimmensionner le logo */
+    width: 250px;
+}
+.presentation>.boite>p{
+    margin: 0;
+}
+.presentation>.boite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.explication>p{
+    margin: 30px;
+}
+.explication{
+    width: 52%;
+}
+
+h3{
+    font-size: 1.1em;
+    text-align: center;
+    /* On doit aligner le logo et le titre */
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+
+/* Deuxième page : */
+.secondPage{
+    height: 100vh;
+    display: flex;
+}
+.images{
+    /* Pour mettres les images les unes a coté des autres */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+}
+.bibliographie{
+    width: 30%;
+}
+.titreOeuvres{
+    display: flex;
+}
+.numero{
+    margin-right: 20px;
+}
+.image{
+    display: flex;
+    flex-direction: column; 
+
+}
+.imagesGauche, .imagesDroite{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.image>img{
+    width: 80%;
+}
+.bibliographie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Troisieme page */
+
+.thirdPage{
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thirdPage>h3{
+    margin: 80px;
+    width: 200px;
+    font-weight: normal;
+}
+
+ul{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    justify-content: center;
+}
+.contact{
+    background-color: lightgrey;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}   
+.bas{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+/* le footer */
+
+footer{
+    background-color: lightgray;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+.footerElem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    height: 100%;
+}
+.footerElem>img{
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+   nav{
+    font-size: 0.8em;
+   }
+   .firstPage{
+    height: auto;
+   }
+   .contenufirstPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   }
+   .presentation{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .explication{
+    width: 100%;
+    font-size: 0.78em;
+    height: 100vh;
+   }
+   .secondPage{
+    flex-direction: column-reverse;
+    align-items: center;
+    height: auto;
+
+   }
+   .images{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+   }
+   .imagesGauche,.imagesDroite{
+    width: 100%;
+   }
+   .image>img{
+    width: 100%;
+   }
+   .bibliographie{
+    justify-content: flex-start;
+    width: 50%;
+   }
+   .thirdPage{
+    height: 95vh;
+   }
+   .contact{
+    width: 80%;
+    margin: 0;
+    justify-content: center;
+    padding: 10px;
+    height: fit-content;
+}
+   .bas{
+    flex-direction: column;
+   }
+   footer{
+    font-size: 0.7em;
+   }
+}
+@media screen and (max-width: 400px) {
+    .explication{
+        font-size: 0.65em ;
+        margin: 0px;
+    }
+    .partieDroite,.partieGauche{
+        margin: 1%;
+    }
+    .footerElem{
+        width: 30%
+    }
+    .thirdPage{
+        justify-content: space-evenly;
+    }
+    .thirdPage>h3{
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+ 
+    }
+a:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
